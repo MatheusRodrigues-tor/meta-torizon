@@ -4,11 +4,8 @@ PACKAGE_CLASSES ?= "package_ipk"
 
 require conf/distro/poky.conf
 require conf/distro/include/arm-defaults.inc
-
-require base-distro.inc
-
 require conf/distro/include/versioning.inc
-
+require base-distro.inc
 require tdx-bsp.inc
 
 IMAGE_CLASSES:append = " image_type_torizon"
